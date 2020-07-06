@@ -1,8 +1,13 @@
 {
-  "name": "c3-cloudfront-clear-cache",
-  "version": "0.0.0",
-  "type": "wordpress-plugin",
+  "name": "sectsect/c3-cloudfront-clear-cache",
+  "license": "GPL v3",
+  "authors": [
+    {
+      "name": "hideokamoto",
+      "email": "hide.okamoto@digitalcube.jp"
+    }
+  ],
   "require": {
-    "php": ">=5.5"
+    "aws/aws-sdk-php": "^3.18"
   }
 }
