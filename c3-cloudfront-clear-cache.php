@@ -10,6 +10,11 @@
  * @package c3-cloudfront-clear-cache
  */
 
+if ( c3_is_later_than_php_55() ) {
+	require_once( dirname( __FILE__ ).'/vendor/autoload.php' );
+} else {
+	require_once( dirname( __FILE__ ).'/aws.phar' );
+}
 define( 'C3_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'C3_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'C3_PLUGIN_ROOT', __FILE__ );
